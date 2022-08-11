@@ -13,10 +13,8 @@ public interface PeminjamanService {
 
     PeminjamanResponseDTO save(PeminjamanDTO peminjamanDTO);
     PeminjamanResponseDTO update(long id, PeminjamanDTO peminjamanDTO);
-
     Peminjaman fetchPeminjaman(long id);
     List<PeminjamanResponseDTO> findAll();
-
     List<PeminjamanResponseDTO> findByIdUser(long idUser);
     String delete(long id);
 }

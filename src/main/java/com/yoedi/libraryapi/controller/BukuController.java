@@ -33,7 +33,7 @@ public class BukuController {
     }
 
     @GetMapping("/all")
-    public ResponseEntity getBuku(@RequestParam String nama) {
+    public ResponseEntity getBuku() {
         List<BukuResponseDTO> listBuku = bukuService.findAll();
         return ResponseHandler.generateResponse("Success", HttpStatus.OK, listBuku);
     }
